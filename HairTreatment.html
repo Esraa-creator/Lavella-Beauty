@@ -16,8 +16,38 @@
             p{ width: 70%;}
             
             </style>
-        
+            <script>
             
+            var order = prompt("Do you want Shampoo or Conditioner?");
+
+
+                while(order !== "Shampoo" && order!== "Conditioner")
+                {
+                    order = prompt("Do you want Shampoo or Conditioner?");
+                }
+                
+                var itemOrder ='';
+                
+                if (order == "Shampoo")
+                {
+                    itemOrder ='<img src ="sham.png"/>';                  
+            
+                }
+                else if ( order =="Conditioner")
+                {
+                    itemOrder ='<img src="con.jpg" width="100"; height="100"; />';
+                }
+                var numOfcontainers = prompt('what is the number of containers?');
+                var result ='';
+                for(var i= 0; i<numOfcontainers; i++)
+                {
+                    document.write(itemOrder);
+                }
+
+                // document.write(result);
+                
+                    </script>
+        
         
             
         
@@ -106,3 +136,4 @@ For example, you’re fed up with how frizzy your hair is, so you try a protein 
    
     </body>
 </html>
+
